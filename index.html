@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <title>Meeting Minutes</title>
+    <meta charset="UTF-8">
+    <!-- Favicon? -->
+    <link rel="icon" type="image/x-icon" href="Media/favicon.ico">
+  </head>
+  <body>
+      <header>
+          <h1>Meeting 1</h1>
+          <nav>
+              <!-- Navigate to sections -->
+              <ul>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#misc">Misc.</a></li>
+                <li><a href="#visuals">Visuals</a></li>
+              </ul>
+          </nav>
+      </header>
+      <main>
+          <section>
+            <h2 id="attendance">Attendance</h2>
+            <ol>
+                <li>
+                    <em>*Dante*</em>
+                    <i>
+                        <span>Project Manager</span>
+                    </i>
+                </li>
+                <li>
+                    <em>*Sarkis*</em>
+                    <i>
+                        <span>Project Manager</span>
+                    </i>
+                </li>
+                <li>Ella Tung</li>
+                <li>Alexander</li>
+                <li>Daniel</li>
+                <li>Derek</li>
+                <li>Eric</li>
+                <li>Kenry</li>
+                <li>Kyrell</li>
+            </ol>
+          </section>
+          <h2 id="agenda">Agenda</h2>
+          <p class="positioneda">
+              The goal of today's meeting was to learn about each other's strengths and weaknesses. In doing this our <br> group aims to choose the correct 
+              job for each person. This goal was completed as we have assigned everyone a role in which they feel comfortable. For our next meeting we 
+              plan to divide everyone into <br> their respective subgroups.
+          </p>
+          <h2 id="misc">Misc.</h2>
+          <div class="boxed">
+              We had one <b>important</b> question that was raised at the end of our meeting:
+          </div>
+
+          <div>What if we dislike the role we are given?</div>
+          <hr>
+          <p class="positioneds">
+              <strong>This question will be addressed next week.</strong>
+          </p>
+          <h1 id="visuals">Visuals</h1>
+          <img src="https://thepeakperformancecenter.com/wp-content/uploads/2011/09/Collaboration.jpg" alt="Collaboration">
+          <details>
+              <summary>Video Recording</summary>
+              <p>This video contains lively discussion.</p>
+              <video width="320" height="240" controls>
+                <source src="Media/IMG_6224.mov" type=video/ogg>
+                <source src="Media/IMG_6224.mp4" type=video/mp4>
+              </video>
+              <audio controls>
+                <source src="Media/IMG_6224audio.ogg=" type="audio/mov">
+                <source src="Media/IMG_6224audio.mp3" type="audio/mpeg">
+              </audio>
+          </details>  
+
+          <div class="flexbox-container">
+          <div class="child">I</div>
+          <div class="child">like</div>
+          <div class="child">dogs</div>
+          </div>
+
+          <style>
+              /* CSS BEGIN */
+
+          /* UNIVERSAL */
+          * {
+            color: black;
+          }
+
+          body {background-color: cornsilk;}
+
+          /* CLASS SELECTOR */
+
+          /* ID */
+          #Groupmember {
+              color: #800000
+          }
+
+          /* ELEMENT */
+          p {
+ 
+            text-decoration: underline overline dotted red;
+            text-align: center;
+            color:
+            hsl(225, 100%, 50%)
+          }
+
+          /* ATTRBIUTE */ FIX
+          li[href="#Attendance"] {
+            color: rgb(255, 128, 0)
+          }
+
+          /* SELECTOR LIST */
+
+          /* COMBINATORS */
+
+          /* BOX STUFF */
+          .boxed {
+            border: 1px solid green ;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            border-radius: 4px;
+            background-color: lightgray;
+            padding: 40px;
+            margin: 40px;
+            width: 300px;
+            display: inline-block; 
+            display: block
+          }
+
+          /* Need short hand and long hand */
+
+          .positioneda {
+            position: absolute;
+            background: green;
+            top: 30px;
+            left: 30px;
+           }
+
+           .positioneds {
+            position: static;
+            background: green;
+            top: 30px;
+            left: 30px;
+           }
+
+           a:hover {
+            background-color: gold;
+           }
+
+           a:active {
+            color: red
+           }
+
+           .flexbox-container {
+            margin:10px;
+            background-color: purple; 
+            display: flex;
+            flex-wrap: nowrap;
+            flex-flow: column wrap;
+
+           }
+           .child {
+            padding: 25px 0;
+            margin: 5px;
+            width:40px;
+            height:0px;
+            text-align: center;
+            background-color: blueviolet;
+           }
+
+           @media screen and (min-width: 480px) {
+            body {
+                background-color: blanchedalmond;
+            }
+
+           @font-face { 
+               font-family: Montserrat; 
+               src: url('/Montserrat/Montserrat-VariableFont_wght.ttf');
+           }
+
+           h1 {
+               font-family: Montserrat;
+           }
+
+           h2 {
+               font-family: Montserrat;
+           }
+
+           h3 {
+               font-family: Montserrat;
+           }
+
+
+
+          </style>
+
+
+
+
+      </main>
+      <footer>
+          <!-- Insert forms here -->
+            <form>
+            <label for="Groupmember">Choose a group member:</label>
+            <select name="Group Member" id="Groupmember">
+              <option value="Ella">Ella</option>
+              <option value="Sarkis">Sarkis</option>
+              <option value="Dante">Dante</option>
+              <option value="Alexander">Alexander</option>
+            </select>
+            </form>
+            <br><br>
+            <form>
+            <textarea id="date" name="date" rows="1" cols="35">Choose a time for the next meeting.</textarea>
+            <br><br>
+            <input type="date">
+            </form>
+            <br><br>
+            <form>
+            <label for="snack">Choose your favorite snack:</label>
+            <input list="snacks" name="snack" id="snack">  
+            <datalist id="snacks">
+                <option value="Chips">
+                <option value="Fruit">
+                <option value="Cookies">
+            </datalist>
+        
+            <input type="submit">
+            </form>
+            <br><br>
+            <button type="button">Press for fun!</button>
+            <br><br>
+
+            <h3>Here's a fun quiz!</h3>
+            <form>
+                <fieldset>
+                    <legend>What is your astrology sign?</legend>
+                    <br>
+                    <label for="bday">When is your birthday?</label>
+                    <input type="date" id="bday" name="Birthday">
+                    <br><br>
+                    <label for="time">What time were you born?</label>
+                    <input type="time" id="time" name="Time">
+                    <br><br>
+                    <input type="submit">
+                    <input type="checkbox">
+                    <input type="radio">
+                </fieldset>
+            </form>
+      </footer>
+  </body>
+</html>
