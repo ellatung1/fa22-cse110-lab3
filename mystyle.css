@@ -1,0 +1,112 @@
+     /* CSS BEGIN */
+
+          /* UNIVERSAL */
+          * {
+            color: black;
+          }
+
+          body {background-color: cornsilk;}
+
+          /* CLASS SELECTOR */
+
+          /* ID */
+          #Groupmember {
+              color: #800000
+          }
+
+          /* ELEMENT */
+          p {
+ 
+            text-decoration: underline overline dotted red;
+            text-align: center;
+            color:
+            hsl(225, 100%, 50%)
+          }
+
+          /* ATTRBIUTE */ FIX
+          li[href="#Attendance"] {
+            color: rgb(255, 128, 0)
+          }
+
+          /* SELECTOR LIST */
+
+          /* COMBINATORS */
+
+          /* BOX STUFF */
+          .boxed {
+            border: 1px solid green ;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            border-radius: 4px;
+            background-color: lightgray;
+            padding: 40px;
+            margin: 40px;
+            width: 300px;
+            display: inline-block; 
+            display: block
+          }
+
+          /* Need short hand and long hand */
+
+          .positioneda {
+            position: absolute;
+            background: green;
+            top: 30px;
+            left: 30px;
+           }
+
+           .positioneds {
+            position: static;
+            background: green;
+            top: 30px;
+            left: 30px;
+           }
+
+           a:hover {
+            background-color: gold;
+           }
+
+           a:active {
+            color: red
+           }
+
+           .flexbox-container {
+            margin:10px;
+            background-color: purple; 
+            display: flex;
+            flex-wrap: nowrap;
+            flex-flow: column wrap;
+
+           }
+           .child {
+            padding: 25px 0;
+            margin: 5px;
+            width:40px;
+            height:0px;
+            text-align: center;
+            background-color: blueviolet;
+           }
+
+           @media screen and (min-width: 480px) {
+            body {
+                background-color: blanchedalmond;
+            }
+
+           @font-face { 
+               font-family: Montserrat; 
+               src: url('/Montserrat/Montserrat-VariableFont_wght.ttf');
+           }
+
+           h1 {
+               font-family: Montserrat;
+           }
+
+           h2 {
+               font-family: Montserrat;
+           }
+
+           h3 {
+               font-family: Montserrat;
+           }
+        }
