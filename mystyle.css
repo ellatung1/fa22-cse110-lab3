@@ -95,7 +95,7 @@
 
            @font-face { 
                font-family: Montserrat; 
-               src: url('./Media/Montserrat-VariableFont_wght.ttf');
+               src: url('Media/Montserrat/Montserrat-VariableFont_wght.ttf');
            }
 
            h1 {
